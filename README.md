@@ -72,7 +72,8 @@ ionic serve
 
 
 A aplicação estará disponível em:
-http://localhost:8100
+http://localhost:8100 
+```
 
 🎯 Objetivo
 
