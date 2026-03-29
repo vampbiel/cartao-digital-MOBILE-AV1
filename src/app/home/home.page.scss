@@ -1,0 +1,145 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #373B44 0%, #4286f4 100%);
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  max-width: 400px;
+  width: 100%;
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-header {
+  background: linear-gradient(135deg, #373B44 0%, #4286f4 100%);
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 30px 20px;
+}
+
+.student-name {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0 30px 0;
+  letter-spacing: 0.5px;
+}
+
+.info-section {
+  margin: 20px 0;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.info-label {
+  font-weight: 600;
+  color: #667eea;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-footer {
+  background: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+}
+
+.institution {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ea8b66;
+  margin: 0 0 5px 0;
+}
+
+.course {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+.nav-button {
+  margin-top: 30px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width: 480px) {
+  .card-container {
+    padding: 10px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .student-name {
+    font-size: 20px;
+  }
+
+  .info-label {
+    font-size: 12px;
+  }
+
+  .info-value {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,127 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #373B44 0%, #4286f4 100%);
+}
+
+.about-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  max-width: 600px;
+  width: 100%;
+  padding: 40px 30px;
+  animation: slideIn 0.5s ease-out;
+  margin-bottom: 20px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #667eea;
+  margin: 0 0 30px 0;
+  letter-spacing: 0.5px;
+}
+
+.about-content {
+  margin: 20px 0;
+}
+
+.about-section {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #764ba2;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+    text-align: justify;
+  }
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.about-footer {
+  background: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #eee;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.footer-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #667eea;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.back-button {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 10px;
+  }
+
+  .about-card {
+    padding: 20px 15px;
+    max-width: 100%;
+  }
+
+  .about-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .about-section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+
+    h2 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Cartão Digital de Identificação</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="card-container">
+    <div class="card">
+      <div class="card-header">
+        <img src="assets/profile.jpg" alt="Foto de Perfil" class="profile-photo" />
+      </div>
+      
+      <div class="card-body">
+        <h1 class="student-name">Gabriel da Silva Rocha</h1>
+        
+        <div class="info-section">
+          <div class="info-item">
+            <span class="info-label">Matrícula:</span>
+            <span class="info-value">25104091</span>
+          </div>
+          
+          <div class="info-item">
+            <span class="info-label">Turma:</span>
+            <span class="info-value">ADS0301M</span>
+          </div>
+          
+          <div class="info-item">
+            <span class="info-label">Unidade:</span>
+            <span class="info-value">BS (Bonsucesso)</span>
+          </div>
+          
+          <div class="info-item">
+            <span class="info-label">Turno:</span>
+            <span class="info-value">Manhã</span>
+          </div>
+        </div>
+        
+        <div class="card-footer">
+          <p class="institution">Centro Universitário Augusto Motta</p>
+          <p class="course">Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+        </div>
+      </div>
+    </div>
+
+    <ion-button 
+      expand="block" 
+      color="light" 
+      (click)="navigateToAbout()"
+      class="nav-button"
+    >
+      Saiba Mais Sobre Mim
+    </ion-button>
+  </div>
+</ion-content>
