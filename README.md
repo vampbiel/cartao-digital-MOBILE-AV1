@@ -37,6 +37,7 @@ A aplicação foi construída utilizando **Angular** com **Ionic Framework**, pr
 ---
 
 ## 📂 Estrutura do Projeto
+```
 src/
 ├── app/
 │ ├── home/ # Página principal (cartão digital)
@@ -46,7 +47,7 @@ src/
 │
 ├── assets/ # Imagens e recursos
 ├── theme/ # Estilos globais
-
+```
 
 ---
 
