@@ -76,7 +76,7 @@ A aplicação estará disponível em:
 http://localhost:8100 
 ```
 
-🎯 Objetivo
+## 🎯 Objetivo
 
 Este projeto foi desenvolvido com foco em:
 
@@ -84,7 +84,8 @@ Prática de desenvolvimento Front-End
 Aprendizado de Angular + Ionic
 Criação de interfaces modernas e responsivas
 Simulação de aplicações reais
-🧠 Aprendizados
+
+## 🧠 Aprendizados
 
 Durante o desenvolvimento, foram aplicados conceitos como:
 
@@ -93,8 +94,9 @@ Roteamento de páginas
 Estilização com SCSS
 Responsividade
 Integração com ambiente mobile (Capacitor)
-👨‍💻 Autor
 
+
+## 👨‍💻 Autor
 Gabriel da Silva Rocha
 💻 Desenvolvedor Front-End em formação
 
